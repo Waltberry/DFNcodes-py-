@@ -173,6 +173,15 @@ jn(i)=2*kn*((u1(i)*c0)^0.5)*((ctn-u2(i)*ctn)^0.5)*((u2(i)*ctn)^0.5)*sinh(0.5*F/R
 
 end
 
+% Display the results
+disp('jn = [')
+for i = 1:length(jn)
+    vpa(jn(i))
+end
+disp(']')
+
+fprintf('len(jn): %d\n', length(jn));
+
 % u1: Electrolyte concentration (mol/m3)
 
 % Positive Electrode
